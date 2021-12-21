@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background: rgb(63, 38, 29);
+}
+.slide{
+   width: 300px;
+   height: 80vh;
+   border-radius: 20px;
+   margin: 15px;
+   display: flex;
+   align-items: flex-end;
+   transition: 1.5s;
+}
+.slide:nth-of-type(1){
+    background: url('https://images.unsplash.com/photo-1605744435823-b88e4e9bc044?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bmV3JTIweWVhciUyMGZhbWlseXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60://unsplash.com/photos/_kiwaVFpSt0') no-repeat center center /cover
+}
+.slide:nth-of-type(2){
+    background: url('https://images.unsplash.com/photo-1601614516082-01a594263674?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmV3JTIweWVhciUyMHRyZWV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60') no-repeat center center /cover
+}
+.slide:nth-of-type(3){
+    background: url('https://media.istockphoto.com/photos/happy-new-year-christmas-golden-bokeh-lights-background-frame-stock-picture-id1322684641?b=1&k=20&m=1322684641&s=170667a&w=0&h=DrGjKPIBoawsSQW0yg4d6cJZF_ker287X_Was_OEVGg=') no-repeat center center /cover;
+}
+.slide:nth-of-type(4){
+    background: url('https://images.unsplash.com/photo-1576665503489-065390b2f490?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmV3JTIweWVhciUyMGZhbWlseXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60') no-repeat center center /cover
+}
+.slide:nth-of-type(5){
+    background: url('https://images.unsplash.com/photo-1557446772-0985ac892643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG5ldyUyMHllYXIlMjBmYW1pbHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60') no-repeat center center /cover
+}
+.title{
+    color: rgb(155, 13, 13);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+.slide.active {
+    width: 900px;
+}
+.slide.active .title{
+    opacity: 1;
+}
